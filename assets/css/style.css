@@ -1,0 +1,18 @@
+body {
+    padding-top: 10px;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 1034px;
+    margin: 0 auto;
+}
+
+#top {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    font-size: 70px;
+}
