@@ -40,7 +40,7 @@ class SVIPDF extends PDFReg {
             "name": "Pokémons",
             "quantity": 15,
             "fields": {
-                "qty": {
+                "pokemon_qty": {
                     "name": "Quantity",
                     "position": "261,644",
                 },
@@ -66,7 +66,7 @@ class SVIPDF extends PDFReg {
             "name": "Trainers",
             "quantity": 18,
             "fields": {
-                "qty": {
+                "trainer_qty": {
                     "name": "Quantity",
                     "position": "261,406",
                 },
@@ -80,7 +80,7 @@ class SVIPDF extends PDFReg {
             "name": "Energy",
             "quantity": 4,
             "fields": {
-                "qty": {
+                "energy_qty": {
                     "name": "Quantity",
                     "position": "261,125",
                 },
