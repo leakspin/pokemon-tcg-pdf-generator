@@ -169,7 +169,7 @@ class PDFReg {
 
     getPositionFromField(element) {
         let group = element.dataset.group;
-        let matchGroups = element.name.match(/^(.+)(\d+)$/);
+        let matchGroups = element.name.match(/^([a-zA-Z_]+)(\d+)$/);
         let position = null;
 
         if (typeof(this.FIELDS[group]['fields'][matchGroups[1]]) !== 'undefined') {
