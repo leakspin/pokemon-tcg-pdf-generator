@@ -1,6 +1,7 @@
 class SVIPDF extends PDFReg {
     PDF = "play-pokemon-deck-list-a4-svi-long.pdf"
     LINE_HEIGHT = 13
+    LINE_OFFSET = 1
 
     FIELDS = {
         "trainer_data": {
@@ -50,7 +51,7 @@ class SVIPDF extends PDFReg {
                 },
                 "set": {
                     "name": "Set",
-                    "position": "465,644",
+                    "position": "463,644",
                 },
                 "coll": {
                     "name": "Collector Number",

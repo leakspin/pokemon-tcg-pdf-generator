@@ -182,7 +182,7 @@ class PDFReg {
 
         if (position) {
             let [x,y] = position.split(',');
-            y = parseInt(y) - (this.LINE_HEIGHT * parseInt(matchGroups[2]));
+            y = parseInt(y) - (this.LINE_HEIGHT * parseInt(matchGroups[2])) - (this.LINE_OFFSET * (parseInt(matchGroups[2]) / 7));
             position = x + ',' + y;
         }
 
