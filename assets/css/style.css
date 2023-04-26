@@ -1,6 +1,9 @@
 body {
-    padding: 10px;
     min-height: 100vh;
+}
+
+body > .content {
+    padding: 10px;
 }
 
 body, .modal-card-body {
