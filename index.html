@@ -22,13 +22,47 @@
             <button class="button is-link is-light" id="download">Download PDF</button>
             <button class="button is-success is-light" id="export">Save Data</button>
             <button class="button is-success is-light" id="import">Load Data</button>
-            <button class="button is-info is-light" id="info">Info</button>
+            <button class="button is-info is-light js-modal-trigger" id="info" data-target="info-modal">Info</button>
         </div>
 
         <div id="form"></div>
     </div>
 
+    <div id="info-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Information & About Me</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="container">
+                    <p>Hi! My name is <a href="https://adrianmora.me" target="_blank">Adrián</a> and I have developed this tool to ease the process of filling the PDF to handle at official Play! Pokemon TCG events. This way, a PDF is filled automatically and you can save the data to reuse it in the future.</p>
+                    <br />
+                    <p><b>DISCLAIMER!</b> - I am not responsible nor liable for incorrect information that could have been exported while using this tool. I cannot provide nor assure that this will work perfectly in all environments or devices. You <b>must</b> review the data generated from this tool before using it at official events.</p>
+                    <br />
+                    <p>Here I will explain what it everything really does:</p>
+                    <p>1. Regulation: selects the regulation that you want to fill. As of now, only Scarlet & Violet is available, but future regulations could be added</p>
+                    <p>2. Download PDF: it generates the final PDF and downloads it to your system.</p>
+                    <p>3. Save data: this button generates a JSON file that contains all the info from your deck. If you save this, you can later load it to recover the data in this same page and modify the data, if you want, or download the PDF again.</p>
+                    <p>4. Load data: this button prompts a dialog where you need to select a JSON file compatible with this tool. Then, it will load it, filling all the data.</p>
+                    <br />
+                    <p>All Trademarks referred to are the property of their respective owners. This website is not affiliated with, sponsored or endorsed by, or in any way associated with The Pokemon Company International Inc, Nintendo, Creatures Inc. or GAME FREAK Inc. This is a website done to being a useful tool for all the TCG community.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
     <div id="top">🏠</div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Play! Pokémon TCG PDF Generator</strong> by <a href="https://adrianmora.me" target="_blank">Adrián Mora</a>. The source code is licensed
+            <a href="https://github.com/leakspin/pokemon-tcg-pdf-generator/blob/main/LICENSE" target="_blank">MIT</a> and publicly available <a href="https://github.com/leakspin/pokemon-tcg-pdf-generator" target="_blank">here</a>.
+          </p>
+        </div>
+      </footer>
 
     <script src="https://unpkg.com/pdf-lib@1.4.0/dist/pdf-lib.min.js"></script>
     <script src="https://unpkg.com/downloadjs@1.4.7"></script>
