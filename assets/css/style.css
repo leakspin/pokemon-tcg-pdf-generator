@@ -1,5 +1,5 @@
 body {
-    padding-top: 10px;
+    padding: 10px;
     min-height: 100vh;
 }
 
@@ -43,11 +43,7 @@ a {
     font-size: 70px;
 }
 
-@media (max-width: 1250px) {
-    body {
-        padding: 10px;
-    }
-
+@media (max-width: 1500px) {
     .pdf-container {
         display: flex;
         flex-wrap: wrap;
