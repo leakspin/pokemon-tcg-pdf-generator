@@ -82,7 +82,6 @@ class PDFReg {
 
         let labelCheck = document.createElement('label');
         labelCheck.classList.add('label');
-        labelCheck.setAttribute('for', name+number);
         labelCheck.innerText = prettyName;
 
         container.appendChild(labelCheck);
@@ -93,17 +92,19 @@ class PDFReg {
         for (const valueKey in values) {
             if (Object.hasOwnProperty.call(values, valueKey)) {
                 let label = document.createElement('label');
-                label.classList.add('radio');
-                
+                label.setAttribute('for', name+number+valueKey);
+                label.classList.add('button');
+
                 let input = document.createElement('input');
                 input.setAttribute('type', 'radio');
+                input.setAttribute('id', name+number+valueKey);
                 input.setAttribute('name', name+number);
                 input.setAttribute('value', valueKey);
                 input.dataset.group = group;
 
-                label.appendChild(input)
-                label.innerHTML += valueKey;
-
+                label.innerText = valueKey;
+                
+                field.appendChild(input)
                 field.appendChild(label)
             }
         }
