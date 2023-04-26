@@ -37,6 +37,14 @@ a {
     display: flex;
 }
 
+.radio:hover {
+    color: hsl(0, 0%, 96%);
+}
+
+#form .control:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 #top {
     display: none;
     position: fixed;
