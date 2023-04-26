@@ -54,7 +54,7 @@ class SVIPDF extends PDFReg {
                     "position": "463,644",
                 },
                 "coll": {
-                    "name": "Collector Num.",
+                    "name": "Coll. Num.",
                     "position": "500,644",
                 },
                 "reg": {
