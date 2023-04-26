@@ -58,7 +58,6 @@ a {
 
 .trainer_data-section > *, .pokemon-section > * > *, .trainers-section > * > *, .energy-section > * > * {
     width: 48%;
-    margin: 0 3px;
 }
 
 .form-section h4, .form-section h6 {
@@ -67,17 +66,14 @@ a {
 
 .birth_date_day-field, .birth_date_month-field, .birth_date_year-field, .set-field, .coll-field, .reg-field {
     width: 31%;
-    margin: 0 3px;
 }
 
 .pokemon_qty-field, .trainer_qty-field, .energy_qty-field {
     width: 18%;
-    margin: 0 3px;
 }
 
 .pokemon_name-field, .trainer_name-field, .energy_name-field {
     width: 78%;
-    margin: 0 3px;
 }
 
 #top {
