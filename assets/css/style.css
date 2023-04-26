@@ -3,9 +3,31 @@ body {
     min-height: 100vh;
 }
 
+body, .modal-card-body {
+    background-color: hsl(0, 0%, 21%);
+    color: hsl(0, 0%, 96%);
+}
+
+.footer, .modal-card-head {
+    background-color: hsl(0, 0%, 29%);
+    color: hsl(0, 0%, 96%);
+}
+
+strong {
+    color: hsl(0, 0%, 86%);
+}
+
+a {
+    color: hsl(216, 73%, 72%);
+}
+
 .content {
     max-width: 1034px;
     margin: 0 auto;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .label, .modal-card-title {
+    color: hsl(0, 0%, 96%);
 }
 
 #top {
