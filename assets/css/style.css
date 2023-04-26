@@ -35,7 +35,6 @@ a {
 
 .check-container {
     display: flex;
-    align-items: center;
 }
 
 .radio:hover {
@@ -44,6 +43,41 @@ a {
 
 #form .control:not(:last-child) {
     margin-bottom: 20px;
+}
+
+.field.is-horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.trainer_data-section, .pokemon-section > div, .trainers-section > div, .energy-section > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.trainer_data-section > *, .pokemon-section > * > *, .trainers-section > * > *, .energy-section > * > * {
+    width: 48%;
+    margin: 0 3px;
+}
+
+.form-section h4, .form-section h6 {
+    width: 100%;
+}
+
+.birth_date_day-field, .birth_date_month-field, .birth_date_year-field, .set-field, .coll-field, .reg-field {
+    width: 31%;
+    margin: 0 3px;
+}
+
+.pokemon_qty-field, .trainer_qty-field, .energy_qty-field {
+    width: 18%;
+    margin: 0 3px;
+}
+
+.pokemon_name-field, .trainer_name-field, .energy_name-field {
+    width: 78%;
+    margin: 0 3px;
 }
 
 #top {
@@ -69,5 +103,13 @@ a {
     .check-container > * { 
         flex-grow: 1;
         text-align: center;
+    }
+
+    .field.is-horizontal {
+        display: block;
+    }
+
+    .trainer_data-section > *, .pokemon-section > * > *, .trainers-section > * > *, .energy-section > * > * {
+        width: 100%;
     }
 }

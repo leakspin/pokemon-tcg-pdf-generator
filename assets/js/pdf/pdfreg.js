@@ -50,13 +50,10 @@ class PDFReg {
 
     generateTextInput(number, group, name, placeholder) {
         let container = document.createElement('div');
-        container.classList.add('field', 'is-horizontal', name + '-field');
-
-        let labelContainer = document.createElement('div')
-        labelContainer.classList.add('field-label', 'is-normal')
+        container.classList.add('field', name + '-field');
 
         let fieldContainer = document.createElement('div')
-        fieldContainer.classList.add('field-body')
+        fieldContainer.classList.add('control')
 
         let label = document.createElement('label');
         label.classList.add('label');
@@ -71,10 +68,9 @@ class PDFReg {
         input.classList.add('input');
         input.dataset.group = group;
 
-        labelContainer.appendChild(label);
+        container.appendChild(label);
         fieldContainer.appendChild(input);
 
-        container.appendChild(labelContainer);
         container.appendChild(fieldContainer);
 
         return container;
@@ -82,20 +78,14 @@ class PDFReg {
 
     generateCheckInput(number, group, name, prettyName, values) {
         let container = document.createElement('div');
-        container.classList.add('field', 'is-horizontal', name + '-field');
+        container.classList.add('field', name + '-field');
 
-        let labelContainer = document.createElement('div')
-        labelContainer.classList.add('field-label', 'is-normal')
-        
         let labelCheck = document.createElement('label');
         labelCheck.classList.add('label');
         labelCheck.setAttribute('for', name+number);
         labelCheck.innerText = prettyName;
 
-        labelContainer.appendChild(labelCheck);
-
-        let fieldContainer = document.createElement('div')
-        fieldContainer.classList.add('field-body')
+        container.appendChild(labelCheck);
 
         let field = document.createElement('div')
         field.classList.add('control', 'check-container')
@@ -118,10 +108,7 @@ class PDFReg {
             }
         }
 
-        fieldContainer.appendChild(field);
-
-        container.appendChild(labelContainer);
-        container.appendChild(fieldContainer);
+        container.appendChild(field);
 
         return container;
     }

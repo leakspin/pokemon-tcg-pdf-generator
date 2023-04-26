@@ -54,7 +54,7 @@ class SVIPDF extends PDFReg {
                     "position": "463,644",
                 },
                 "coll": {
-                    "name": "Collector Number",
+                    "name": "Collector Num.",
                     "position": "500,644",
                 },
                 "reg": {
@@ -69,11 +69,11 @@ class SVIPDF extends PDFReg {
             "fields": {
                 "trainer_qty": {
                     "name": "Quantity",
-                    "position": "261,406",
+                    "position": "261,407",
                 },
                 "trainer_name": {
                     "name": "Name",
-                    "position": "287,406",
+                    "position": "287,407",
                 },
             },
         },
