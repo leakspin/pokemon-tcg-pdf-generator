@@ -4,5 +4,8 @@ If you compete in official events, you need to fill a PDF with all the cards inc
 
 This website is not affiliated with, sponsored or endorsed by, or in any way associated with The Pokemon Company International Inc, Nintendo, Creatures Inc. or GAME FREAK Inc.
 
+## Features
+Well, I did this website to help myself and others to fill the data. It is not the most beautiful website but it's functional. If you have problems, errors or suggestions, please use the [Issues](https://github.com/leakspin/pokemon-tcg-pdf-generator/issues) tab to do so!
+
 ## Acknowledges
 The Pokemon Company International Inc, Nintendo, Creatures Inc. and GAME FREAK Inc for creating such a beautiful game that has inspired me to do this tool.
