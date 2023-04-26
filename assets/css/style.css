@@ -35,6 +35,7 @@ a {
 
 .check-container {
     display: flex;
+    align-items: center;
 }
 
 .radio:hover {
