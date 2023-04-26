@@ -98,7 +98,7 @@ class PDFReg {
         fieldContainer.classList.add('field-body')
 
         let field = document.createElement('div')
-        field.classList.add('control')
+        field.classList.add('control', 'check-container')
 
         for (const valueKey in values) {
             if (Object.hasOwnProperty.call(values, valueKey)) {

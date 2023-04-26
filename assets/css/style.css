@@ -30,6 +30,10 @@ a {
     color: hsl(0, 0%, 96%);
 }
 
+.check-container {
+    display: flex;
+}
+
 #top {
     display: none;
     position: fixed;
@@ -37,4 +41,25 @@ a {
     bottom: 10px;
     cursor: pointer;
     font-size: 70px;
+}
+
+@media (max-width: 1250px) {
+    body {
+        padding: 10px;
+    }
+
+    .pdf-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pdf-container > * {
+        margin: 2px 4px;
+    }
+
+    .check-container > * { 
+        flex-grow: 1;
+        text-align: center;
+    }
 }
