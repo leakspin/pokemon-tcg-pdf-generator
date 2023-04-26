@@ -7,7 +7,7 @@ class PDFReg {
                 const fieldGroup = this.FIELDS[groupKey];
 
                 let inputGroup = document.createElement('div');
-                inputGroup.classList.add('is-grouped', 'control');
+                inputGroup.classList.add('is-grouped', 'control', groupKey + '-section', 'form-section');
                 let inputGroupTitle = document.createElement('h4');
                 inputGroupTitle.innerText = fieldGroup.name;
                 inputGroup.appendChild(inputGroupTitle);
@@ -50,7 +50,7 @@ class PDFReg {
 
     generateTextInput(number, group, name, placeholder) {
         let container = document.createElement('div');
-        container.classList.add('field', 'is-horizontal');
+        container.classList.add('field', 'is-horizontal', name + '-field');
 
         let labelContainer = document.createElement('div')
         labelContainer.classList.add('field-label', 'is-normal')
@@ -82,7 +82,7 @@ class PDFReg {
 
     generateCheckInput(number, group, name, prettyName, values) {
         let container = document.createElement('div');
-        container.classList.add('field', 'is-horizontal');
+        container.classList.add('field', 'is-horizontal', name + '-field');
 
         let labelContainer = document.createElement('div')
         labelContainer.classList.add('field-label', 'is-normal')
