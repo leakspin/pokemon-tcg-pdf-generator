@@ -152,7 +152,7 @@ class PDFReg {
 
         const pdfBytes = await pdfDoc.save()
 
-        download(pdfBytes, "pdf-lib_modification_example.pdf", "application/pdf");
+        download(pdfBytes, 'pokemon-tcg-pdf-data-' + (new Date()).getTime() + '.pdf', 'application/pdf');
     }
 
     getPositionFromField(element) {
