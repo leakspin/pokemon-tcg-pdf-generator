@@ -139,7 +139,7 @@ class PDFReg {
                         })
                     }
                 } else {
-                    let value = elem.name.match(/^coll/) && elem.value.length === 1 ? '  ' + elem.value : elem.value;
+                    let value = elem.name.match(/^[coll|pokemon_qty|trainer_qty|energy_qty]/) && elem.value.length === 1 ? '  ' + elem.value : elem.value;
                     firstPage.drawText(value, {
                         x: parseInt(x),
                         y: parseInt(y),
