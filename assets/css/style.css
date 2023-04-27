@@ -45,9 +45,16 @@ input[type="radio"] {
     width: 100%;
 }
 
-.check-container label { 
-    width: 33%;
+.check-container label {
     text-align: center;
+}
+
+.age_division-field .check-container label {
+    width: 33%;   
+}
+
+.format-field .check-container label {
+    width: 49%;   
 }
 
 .check-container input[type="radio"]:checked + label {
@@ -79,7 +86,7 @@ input[type="radio"] {
     width: 48%;
 }
 
-.form-section h4, .form-section h6, .age_division-field {
+.form-section h4, .form-section h6, .age_division-field, .format-field {
     width: 100%;
 }
 
@@ -118,8 +125,4 @@ input[type="radio"] {
     .field.is-horizontal {
         display: block;
     }
-
-    /* .trainer_data-section > *, .pokemon-section > * > *, .trainers-section > * > *, .energy-section > * > * {
-        width: 100%;
-    } */
 }

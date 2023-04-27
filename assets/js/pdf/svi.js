@@ -35,6 +35,13 @@ class SVIPDF extends PDFReg {
                         "Junior": "366,723",
                     }
                 },
+                "format": {
+                    "name": "Format",
+                    "check": {
+                        "Standard": "145,788",
+                        "Expanded": "195,788",
+                    }
+                },
             },
         },
         "pokemon": {
