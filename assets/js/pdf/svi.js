@@ -59,7 +59,7 @@ class SVIPDF extends PDFReg {
                 },
                 "reg": {
                     "name": "Regulation",
-                    "position": "539,644",
+                    "position": "537,644",
                 },
             },
         },
