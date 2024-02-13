@@ -1,7 +1,8 @@
 const { degrees, PDFDocument, rgb, StandardFonts } = PDFLib
 
 const PDF_REG = {
-    'svi': new SVIPDF()
+    'paf': new PAFPDF(),
+    'svi': new SVIPDF(),
 };
 
 let REG_CLASS;
